@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    
+<section>
+    <div class="container py-2">
+        <h1 class="bg-danger p-2 rounded">CURD Operating System..!</h1>
+          <div class="crud__form">
+            <div class="row">
+              <div class="col-md-6">
+                <label class="text-uppercase" for="productNameInput">Product Name:</label>
+                  <input type="text" id="productNameInput" class="form-control bg-transparent text-danger mb-2">
+              </div>
+              <div class="col-md-6">
+                <label class="text-uppercase" for="productCategoryInput">Product Category:</label>
+                  <input type="text" id="productCategoryInput" class="form-control bg-transparent text-danger mb-2">
+              </div>
+              <div class="col-md-4">
+                <label class="text-uppercase" for="productPriceInput">Product Price:</label>
+                  <input type="text" id="productPriceInput" class="form-control bg-transparent text-danger mb-2">
+              </div>
+              <div class="col-md-4">
+                <label class="text-uppercase" for="productDiscountInput">Product Discount:</label>
+                  <input type="text" id="productDiscountInput" class="form-control bg-transparent text-danger mb-2">
+              </div>
+              <div class="col-md-4">
+                <label class="text-uppercase" for="productQuantityInput">Product Quantity:</label>
+                  <input type="text" id="productQuantityInput" class="form-control bg-transparent text-danger mb-2">
+              </div>
+              <div class="col-md-12">
+                <label class="text-uppercase" for="productQuantityInput">Product Description:</label>
+                 <textarea id="productDescriptionInput" class="form-control bg-transparent text-danger mb-2"></textarea>
+                 <button id="add_btn" class="btn btn-outline-success">ADD PRODUCT</button>
+                 <button id="UpdateBtn" class="btn btn-outline-info d-none">UPDATE PRODUCT</button>
+              </div>
+            </div>
+        </div>
+    </div>
+  
+</section>
+
+<section>
+    <div class="container py-2">
+      <table class="table text-center ">
+        <input type="search" id="searchInput" class="form-control bg-transparent my-2 " placeholder="Search..!">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Discount</th>
+                <th>Quantity</th>
+                <th>discription</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody class="showdata">
+        
+        </tbody>
+      </table>
+    </div>
+</section>
+
+
+
+    
+
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
